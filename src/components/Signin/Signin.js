@@ -26,7 +26,6 @@ class Signin extends React.Component {
     })
     const user = await response.json()
     if (user[0].id) {
-      console.log('i am home', user.id)
       this.props.loadUser(user[0]);
       this.props.onRouteChange('home')
     }
